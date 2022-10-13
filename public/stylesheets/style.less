@@ -1,0 +1,52 @@
+.tab {
+  .icon-remove {
+    margin-left: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #faa;
+    }
+  }
+
+  .icon-edit {
+    margin-left: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #afa;
+    }
+  }
+}
+
+.item {
+  cursor: pointer;
+
+  td {
+    vertical-align: middle;
+
+    .text {
+      float: left;
+      line-height: 28px;
+    }
+
+    @media (min-width: 768px) {
+      line-height: 16px;
+      padding: 2px;
+    }
+
+    .delete {
+      float: right;
+    }
+  }
+
+  &.done {
+    background-color: #3E813E;
+  }
+}
+
+.ui-sortable-helper {
+  background-color: #fcfcfc;
+  border: 1px solid black;
+
+  .delete {
+    display: none;
+  }
+}
